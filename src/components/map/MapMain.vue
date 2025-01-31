@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div id="map" :style="mapStyles"></div>
     </div>
 </template>
@@ -109,7 +108,7 @@ export default {
                 createMarker: () => null,
                 routeWhileDragging: false,
                 fitSelectedRoutes: false,
-                containerClassName: 'hide-control', // Добавляем класс для скрытия
+                containerClassName: 'hide-control',
                 addWaypoints: false,
                 draggableWaypoints: false,
             }).addTo(this.map);
@@ -127,7 +126,6 @@ export default {
             });
         },
 
-        // Остальные методы остаются без изменений
         findNearestBin(carPos) {
             let nearest = null;
             let minDist = Infinity;
