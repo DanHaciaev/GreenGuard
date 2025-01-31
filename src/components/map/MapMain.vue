@@ -1,6 +1,15 @@
 <template>
-    <div id="map" :style="mapStyles"></div>
+    <div>
+
+        <div id="map" :style="mapStyles"></div>
+    </div>
 </template>
+
+<style>
+.hide-control {
+    display: none !important;
+}
+</style>
 
 <script>
 import L from 'leaflet';
@@ -99,7 +108,10 @@ export default {
                 waypoints: [L.latLng(carPos.lat, carPos.lng), L.latLng(nearestBin.lat, nearestBin.lng)],
                 createMarker: () => null,
                 routeWhileDragging: false,
-                fitSelectedRoutes: false
+                fitSelectedRoutes: false,
+                containerClassName: 'hide-control', // Добавляем класс для скрытия
+                addWaypoints: false,
+                draggableWaypoints: false,
             }).addTo(this.map);
 
             this.carRoutes[carId] = routingControl;
@@ -115,6 +127,7 @@ export default {
             });
         },
 
+        // Остальные методы остаются без изменений
         findNearestBin(carPos) {
             let nearest = null;
             let minDist = Infinity;
