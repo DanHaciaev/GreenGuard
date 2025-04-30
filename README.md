@@ -1,29 +1,28 @@
-# greenguard
+# Greenguard
 
-This template should help get you started developing with Vue 3 in Vite.
+## Smart Waste Collection Prototype Built with Vue.js
 
-## Recommended IDE Setup
+**Greenguard** is a prototype application developed with **Vue.js**, designed to simulate the tracking of garbage trucks collecting waste bins throughout a city.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The goal of the full application is to include features such as:
+- **Bin fill-level sensors**
+- **Real-time GPS tracking of vehicles**
+- **Intelligent route optimization** to reduce fuel usage and improve efficiency
 
-## Customize configuration
+Currently, truck movement is **simulated** for demonstration purposes. However, this concept could be scaled and proposed at the **municipal level** to modernize urban waste collection systems.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🔐 Registration Page
 
-```sh
-npm install
-```
+![Registration](./public/examples/registration.png)
 
-### Compile and Hot-Reload for Development
+## 🗺️ Interactive Map
 
-```sh
-npm run dev
-```
+![Map](./public/examples/map.png)
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🔗 Live Demo
+
+[Try the prototype here](https://green-guard-eight.vercel.app/)
